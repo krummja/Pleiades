@@ -1,7 +1,6 @@
 using UnityEngine;
 
-
-namespace Runtime
+namespace Architecture
 {
     public class BaseManager<T> : MonoBehaviour where T : Component
     {

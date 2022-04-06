@@ -1,13 +1,13 @@
 using UnityEngine;
-using Runtime;
+using DG.Tweening;
 
-namespace Managers
+namespace Architecture
 {
     public class AppManager : BaseManager<AppManager>
     {
         protected override void OnAwake()
         {
-
+            DOTween.Init();
         }
     }
 }
