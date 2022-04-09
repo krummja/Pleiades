@@ -6,18 +6,24 @@ using Sirenix.OdinInspector;
 
 namespace GUI.Effectors
 {
+    /// <summary>
+    /// UI Element Effector - Pulse
+    ///
+    /// Causes the UI element to pulse gently.
+    /// Connect method `Kill` in inspector where needed.
+    /// </summary>
     public class PulseEffector : BaseEffector
     {
-        [BoxGroup("Tween Settings")]
+        [FoldoutGroup("Tween Settings")]
         public float Scale = 2f;
 
-        [BoxGroup("Tween Settings")]
+        [FoldoutGroup("Tween Settings")]
         public float Duration = 1f;
 
         private Tween grow;
         private Tween shrink;
 
-        public void Kill()
+        public override void Kill()
         {
             grow.Kill();
             shrink.Kill();
