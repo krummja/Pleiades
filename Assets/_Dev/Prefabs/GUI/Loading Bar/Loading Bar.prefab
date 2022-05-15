@@ -89,4 +89,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ProgressBar: {fileID: 1113072953309832416}
-  ProgressAnimationMultiplier: 0.25
+  Progress: {fileID: 11400000, guid: 7cfbcb6c089bbe44799f66c8d0fd3e00, type: 2}

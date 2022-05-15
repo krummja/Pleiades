@@ -1,20 +1,26 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Sirenix.OdinInspector;
 
-namespace GUI
+namespace SakuraUI
 {
     using Architecture;
 
-    public class GUIManager : BaseManager<GUIManager>
+    public class GUIManager : SerializedBaseManager<GUIManager>
     {
-        [FoldoutGroup("Canvas Layers")]
-        public Canvas BackgroundLayer;
+        public Dictionary<Scenes, GameObject> SceneGUIPrefabs = new Dictionary<Scenes, GameObject>();
 
-        [FoldoutGroup("Canvas Layers")]
-        public Canvas RootLayer;
+        public GameObject ActiveGUI { get; private set; }
 
-        [FoldoutGroup("Canvas Layers")]
-        public Canvas ForegroundLayer;
+        public void SetSceneGUI(Scenes scene)
+        {
+            if (ActiveGUI != null)
+                Destroy(ActiveGUI);
+
+            GameObject guiPrefab = SceneGUIPrefabs[scene];
+            ActiveGUI = Instantiate(guiPrefab);
+            ActiveGUI.transform.parent = transform;
+        }
     }
 }

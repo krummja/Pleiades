@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 792776804028330585}
   - component: {fileID: 792776804028330584}
+  - component: {fileID: -2215816182695580157}
   m_Layer: 0
   m_Name: '@Scene_Loader'
   m_TagString: Untagged
@@ -51,4 +52,45 @@ MonoBehaviour:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
-    SerializationNodes: []
+    SerializationNodes:
+    - Name: Transitions
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[GUI.Effectors.FadeType, Assembly-CSharp],[UnityEngine.GameObject,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.EnumEqualityComparer`1[[GUI.Effectors.FadeType,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!114 &-2215816182695580157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792776804028330535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3afe46d9bdd841b098c559cba2beec95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Current: {fileID: 11400000, guid: 7cfbcb6c089bbe44799f66c8d0fd3e00, type: 2}
+  TargetValue: 0
+  ProgressMultiplier: 0.25

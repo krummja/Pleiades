@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using DG.Tweening;
 using Sirenix.OdinInspector;
 
-namespace GUI.Effectors
+namespace SakuraUI.Effectors
 {
     /// <summary>
     /// UI Element Effector - Pulse
@@ -14,10 +14,10 @@ namespace GUI.Effectors
     /// </summary>
     public class PulseEffector : BaseEffector
     {
-        [FoldoutGroup("Tween Settings")]
+        [FoldoutGroup("Pulse Settings")]
         public float Scale = 2f;
 
-        [FoldoutGroup("Tween Settings")]
+        [FoldoutGroup("Pulse Settings")]
         public float Duration = 1f;
 
         private Tween grow;

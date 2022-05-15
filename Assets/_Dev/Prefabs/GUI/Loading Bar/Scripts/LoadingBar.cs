@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using ScriptableObjectArchitecture;
 
 namespace Dev.GUI
 {
@@ -9,6 +10,8 @@ namespace Dev.GUI
     {
         public Image ProgressBar;
 
+        public FloatVariable Progress;
+
         private void Start()
         {
             ProgressBar.fillAmount = 0;
@@ -16,7 +19,7 @@ namespace Dev.GUI
 
         private void Update()
         {
-            ProgressBar.fillAmount = SceneLoader.Instance.LoadProgress;
+            ProgressBar.fillAmount = Progress.Value;
         }
     }
 }

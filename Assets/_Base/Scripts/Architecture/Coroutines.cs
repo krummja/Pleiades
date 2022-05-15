@@ -3,14 +3,15 @@ using UnityEngine;
 
 namespace Architecture
 {
+    using System.Collections.Generic;
+
     public class Coroutines : MonoBehaviour
     {
         private static string NAME = "[COROUTINE MANAGER]";
-
         private static Coroutines instance;
         private static Coroutines m_instance;
 
-        private static bool isInitialized
+        private static bool IsInitialized
         {
             get { return m_instance != null; }
         }
@@ -33,7 +34,7 @@ namespace Architecture
 
         private static Coroutines GetInstance()
         {
-            if ( !isInitialized )
+            if ( !IsInitialized )
                 m_instance = CreateSingleton();
             return m_instance;
         }

@@ -2,10 +2,12 @@ using UnityEngine;
 using DG.Tweening;
 using Sirenix.OdinInspector;
 
-namespace GUI.Effectors
+namespace SakuraUI.Effectors
 {
     public class BaseEffector : MonoBehaviour
     {
+        public bool IsComplete = false;
+
         [FoldoutGroup("Easing Settings")]
         public Ease EaseIn;
 

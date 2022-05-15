@@ -5,21 +5,16 @@ using DG.Tweening;
 
 namespace Architecture
 {
+    using SakuraUI;
+
     public class AppManager : BaseManager<AppManager>
     {
         public bool AllowAnyKey = true;
 
-        protected override void OnAwake()
-        {
-            DOTween.Init();
-        }
-
         private void Start()
         {
-            if ( SceneLoader.Instance.IsSceneLoaded(Scenes.BOOT) )
-                SceneLoader.Instance.UnloadScene(Scenes.BOOT);
-            if ( !SceneLoader.Instance.IsSceneLoaded(Scenes.UI) )
-                SceneLoader.Instance.LoadScene(Scenes.UI);
+            DOTween.Init();
+            GUIManager.Instance.SetSceneGUI(Scenes.ROOT);
         }
 
         private void Update()
@@ -27,7 +22,7 @@ namespace Architecture
             if ( AllowAnyKey && Input.anyKeyDown )
             {
                 AllowAnyKey = false;
-                SceneLoader.Instance.LoadSceneAsync(Scenes.SAMPLE);
+                SceneLoader.Instance.LoadScene(Scenes.SAMPLE_1, async: true);
             }
         }
     }
