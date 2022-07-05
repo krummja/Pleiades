@@ -22,7 +22,7 @@ namespace Architecture
             if ( AllowAnyKey && Input.anyKeyDown )
             {
                 AllowAnyKey = false;
-                SceneLoader.Instance.LoadScene(Scenes.SAMPLE_1, async: true);
+                SceneLoader.Instance.LoadScene(Scenes.PLEIADES_MAIN, async: true);
             }
         }
     }

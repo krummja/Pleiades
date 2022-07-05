@@ -9,16 +9,27 @@ namespace Architecture
     using SakuraUI;
     using SakuraUI.Effectors;
 
+    /// <summary>
+    /// Enum corresponding to the scenes configured in Unity's Build Settings.
+    ///
+    /// Note that the order of the members of this enum must match the order of
+    /// the scenes in Build Settings.
+    /// </summary>
     public enum Scenes
     {
         ROOT,
         LOAD,
-        SAMPLE_1,
-        SAMPLE_2,
+        PLEIADES_MAIN,
     }
 
     public class SceneLoader : SerializedBaseManager<SceneLoader>
     {
+        /// <summary>
+        /// Load the specified scene using the provided scene mode.
+        /// </summary>
+        /// <param name="scene">A Scenes enum member</param>
+        /// <param name="mode">A LoadSceneMode enum member</param>
+        /// <param name="async">Loads the scene asynchronously if true</param>
         public void LoadScene(Scenes scene, LoadSceneMode mode = LoadSceneMode.Additive, bool async = false)
         {
             ConfigLoader.Instance.LoadSceneConfig(scene);
@@ -33,6 +44,10 @@ namespace Architecture
             }
         }
 
+        /// <summary>
+        /// Unload the specified scene.
+        /// </summary>
+        /// <param name="scene">A Scenes enum member</param>
         public void UnloadScene(Scenes scene)
         {
             StartCoroutine(UnloadSceneAsync(scene));

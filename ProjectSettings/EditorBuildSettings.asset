@@ -6,15 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Base/Scenes/__ROOT.unity
+    path: Assets/Pleiades/Scenes/__ROOT/__ROOT.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/_Base/Scenes/__LOAD.unity
+    path: Assets/Pleiades/Scenes/__LOAD/__LOAD.unity
     guid: 242952330a9908825b99b34800acb3fc
   - enabled: 1
-    path: Assets/_Dev/Scenes/SampleScene_1.unity
-    guid: 89585392cea602778a76fe604c568396
-  - enabled: 1
-    path: Assets/_Dev/Scenes/SampleScene_2.unity
-    guid: 10e03a86e2ba7d3b18ecdf4307e3acb3
+    path: Assets/Pleiades/Scenes/__PLEIADES_MAIN/__PLEIADES_MAIN.unity
+    guid: f1c6420f55c16c84084538881d8a4248
   m_configObjects: {}
