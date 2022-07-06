@@ -19,8 +19,9 @@ public sealed class SC_Main : SceneController<SC_Main, SA_Main>
 
     protected override void OnAwake()
     {
-        this.Camera = Config.Camera.GetComponent<Camera>();
-        CinemachineFreeLook cinemachine = Config.Camera.GetComponent<CinemachineFreeLook>();
+        GameObject cameraObj = CameraManager.Instance.ActiveCamera;
+        this.Camera = cameraObj.GetComponent<Camera>();
+        CinemachineFreeLook cinemachine = cameraObj.GetComponent<CinemachineFreeLook>();
 
         Transform controller = GameObject.Find("ViewController").transform;
         cinemachine.Follow = cinemachine.LookAt = controller;

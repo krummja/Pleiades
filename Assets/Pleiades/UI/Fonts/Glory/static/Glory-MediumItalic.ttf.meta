@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: e4b9a38b7bd0ef44a9363494d0a9defa
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Glory
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 52531805dcaa7c447912334694239644, type: 3}
+  - {fileID: 12800000, guid: 9069ce01d6ef152439e3c0ae094238b4, type: 3}
+  - {fileID: 12800000, guid: 924213ee5aeecf341a94b7320223c75d, type: 3}
+  - {fileID: 12800000, guid: 81e2dbae97188f846bf75b951c47c5bd, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

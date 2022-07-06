@@ -4,6 +4,13 @@ using UnityEngine.Rendering.PostProcessing;
 using Sirenix.OdinInspector;
 
 
+public enum CameraType
+{
+    MAIN,
+    MENU,
+}
+
+
 [CreateAssetMenu(menuName = "Scenes/SceneConfig", fileName = "SceneConfig")]
 public class SceneConfig : SerializedScriptableObject
 {
@@ -22,7 +29,7 @@ public class SceneConfig : SerializedScriptableObject
     public float MusicVolume;
 
     [BoxGroup("Visuals")] 
-    public GameObject Camera;
+    public CameraType Camera;
     
     [BoxGroup("Visuals")]
     public PostProcessProfile PostProcessProfile;

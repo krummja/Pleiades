@@ -22,7 +22,7 @@ namespace Architecture
 
                 SceneConfig config = SceneConfigs[scene];
                 AudioManager.Instance.LoadSceneAudio(config.SceneMusic, config.MusicVolume);
-                CameraManager.Instance.LoadSceneCamera(config.PostProcessProfile);
+                CameraManager.Instance.LoadSceneCamera(config.Camera, config.PostProcessProfile);
 
                 if ( OnConfigLoadEnd != null )
                     OnConfigLoadEnd();

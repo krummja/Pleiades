@@ -644,7 +644,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2710509514460280666, guid: dca7ab49ea1d8fb438ba7ea379d51492, type: 3}
       propertyPath: m_Name
-      value: __SC_PleiadesMain
+      value: Controller
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dca7ab49ea1d8fb438ba7ea379d51492, type: 3}
@@ -1052,6 +1052,10 @@ PrefabInstance:
     - target: {fileID: 4929752653720416803, guid: d4735643af0d46d4998bea89f44f6e30, type: 3}
       propertyPath: Camera
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4929752653720416803, guid: d4735643af0d46d4998bea89f44f6e30, type: 3}
+      propertyPath: DragSpeed
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 4929752653720416813, guid: d4735643af0d46d4998bea89f44f6e30, type: 3}
       propertyPath: m_Name

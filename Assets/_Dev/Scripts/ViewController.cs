@@ -32,24 +32,42 @@ public class ViewController : MonoBehaviour
 
     private void HandleZoomInput()
     {
+        // TODO Add support for MMB + YAxis movement for moving the plane
+        bool zoomDown = Input.GetButtonDown("CTRL") || Input.GetMouseButtonDown(2);
+        bool zoomUp = Input.GetButtonUp("CTRL") || Input.GetMouseButtonUp(2);
+        bool zoom = Input.GetButton("CTRL") || Input.GetMouseButton(2);
+        
         // If CTRL is held, we want to zoom the current view plane.
-        if (Input.GetButtonDown("CTRL")) cinemachine.m_YAxis.m_MaxSpeed = 0;
+        if (zoomDown) cinemachine.m_YAxis.m_MaxSpeed = 0;
         
         // Otherwise, we want to zoom the camera between rigs.
-        if (Input.GetButtonUp("CTRL")) cinemachine.m_YAxis.m_MaxSpeed = 1;
+        if (zoomUp) cinemachine.m_YAxis.m_MaxSpeed = 1;
+
+        if (Input.GetMouseButtonDown(2))
+        {
+            dragOrigin = Input.mousePosition;
+            return;
+        }
+
+        if (!zoom) return;
+        Vector3 pos = this.camera.ScreenToViewportPoint(Input.mousePosition - dragOrigin);
         
-        if (Input.mouseScrollDelta.y != 0)
+        if (Input.GetButton("CTRL"))
         {
             float scrollDelta = Input.mouseScrollDelta.y;
-
-            // While we're holding CTRL...
-            if (Input.GetButton("CTRL"))
+            
+            if (Input.mouseScrollDelta.y != 0)
             {
-                // Compute the scroll speed and tween the Y axis translation.
                 Vector3 scroll = new Vector3(0, scrollDelta * ScrollSpeed, 0);
                 scrollOrigin = transform.position - scroll;
-                transform.DOMoveY(scrollOrigin.y, 0.25f, false);    
+                transform.DOMoveY(scrollOrigin.y, 0.25f, false);
             }
+        }
+        else if (Input.GetMouseButton(2))
+        {
+            Vector3 scroll = new Vector3(0, pos.y * ScrollSpeed, 0);
+            scrollOrigin = transform.position + scroll;
+            transform.DOMoveY(scrollOrigin.y, 0.25f, false);
         }
     }
 

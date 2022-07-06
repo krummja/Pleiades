@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Root" style="height: 1004px; bottom: auto;">
+        <ui:VisualElement name="Container" style="flex-shrink: 0; flex-grow: 1; margin-left: 15%; margin-right: 15%; margin-top: 0; margin-bottom: 0;" />
+    </ui:VisualElement>
+</ui:UXML>

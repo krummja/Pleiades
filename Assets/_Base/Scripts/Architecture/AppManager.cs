@@ -2,11 +2,10 @@ using System;
 using System.Collections;
 using UnityEngine;
 using DG.Tweening;
+using SakuraUI;
 
 namespace Architecture
 {
-    using SakuraUI;
-
     public class AppManager : BaseManager<AppManager>
     {
         public bool AllowAnyKey = true;
