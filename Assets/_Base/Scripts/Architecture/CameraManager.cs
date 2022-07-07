@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.SceneManagement;
 
-namespace Architecture
+namespace Pleiades.Architecture
 {
     public class CameraManager : BaseManager<CameraManager>
     {
@@ -17,10 +17,7 @@ namespace Architecture
         public void LoadSceneCamera(CameraType camera, PostProcessProfile profile)
         {
             if (ActiveCamera)
-            {
-                Debug.Log("Active camera found");
                 ActiveCamera.SetActive(false);
-            }
 
             switch (camera)
             {

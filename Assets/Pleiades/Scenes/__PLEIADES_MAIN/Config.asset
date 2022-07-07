@@ -24,7 +24,7 @@ MonoBehaviour:
   Scene: 2
   SceneDescription: Pleiades' main scene, providing the main game view. All other
     UI scenes should branch from and return to this scene.
-  SceneMusic: {fileID: 0}
-  MusicVolume: 0
+  SceneMusic: {fileID: 8300000, guid: c5a6af7adb029df4ba0967bc4de9e7ac, type: 3}
+  MusicVolume: 1
   Camera: 0
   PostProcessProfile: {fileID: 11400000, guid: 84a9a723835809c49a7c20af5adb9a87, type: 2}

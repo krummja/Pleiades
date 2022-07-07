@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Architecture;
 using Cinemachine;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using Pleiades.__Architecture;
 
 public sealed class SA_Load : SceneArgs
 {

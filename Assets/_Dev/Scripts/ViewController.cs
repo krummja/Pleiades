@@ -1,9 +1,9 @@
 ﻿using System;
-using Architecture;
 using Cinemachine;
 using DG.Tweening;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using Pleiades.__Architecture;
 
 
 public class ViewController : MonoBehaviour

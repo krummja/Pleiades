@@ -1,7 +1,7 @@
 using UnityEngine;
 using Sirenix.OdinInspector;
 
-namespace Architecture
+namespace Pleiades.Architecture
 {
     public class BaseManager<T> : MonoBehaviour where T : Component
     {

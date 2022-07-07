@@ -28,6 +28,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -44,8 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d60f9ddc68bf4e52864751772965a5c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneMusic: {fileID: 0}
-  MusicVolume: 0
+  SceneMusic: {fileID: 8300000, guid: c5a6af7adb029df4ba0967bc4de9e7ac, type: 3}
+  MusicVolume: 10
 --- !u!82 &4551570109255332514
 AudioSource:
   m_ObjectHideFlags: 0

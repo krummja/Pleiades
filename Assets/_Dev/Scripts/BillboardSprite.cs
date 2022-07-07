@@ -1,5 +1,5 @@
 ﻿using System;
-using Architecture;
+using Pleiades.__Architecture;
 using UnityEngine;
 
 public class BillboardSprite : MonoBehaviour

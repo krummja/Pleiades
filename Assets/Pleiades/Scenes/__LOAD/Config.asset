@@ -23,7 +23,7 @@ MonoBehaviour:
     SerializationNodes: []
   Scene: 1
   SceneDescription: 
-  SceneMusic: {fileID: 8300000, guid: 5d3613a99f5e0ac43a2acdfd87d61a4e, type: 3}
-  MusicVolume: 0
-  Camera: {fileID: 0}
+  SceneMusic: {fileID: 8300000, guid: c5a6af7adb029df4ba0967bc4de9e7ac, type: 3}
+  MusicVolume: 1
+  Camera: 1
   PostProcessProfile: {fileID: 11400000, guid: 84a9a723835809c49a7c20af5adb9a87, type: 2}

@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Root" style="flex-shrink: 0; flex-grow: 1;">
+        <ui:VisualElement name="Container" style="flex-shrink: 0; flex-grow: 1; margin-left: 20%; margin-right: 20%;">
+            <ui:Label text="P L E I A D E S" display-tooltip-when-elided="true" name="Logo" style="-unity-font: url(&apos;project://database/Assets/Pleiades/UI/Fonts/Iceland/Iceland-Regular.ttf?fileID=12800000&amp;guid=f7639ce018592be4a9274760f4578bf7&amp;type=3#Iceland-Regular&apos;); font-size: 134px; -unity-font-definition: none; -unity-font-style: bold; -unity-text-align: middle-center; margin-top: 20%; color: rgba(255, 255, 255, 255);" />
+            <ui:GroupBox name="ButtonGroup" style="margin-left: 0; margin-right: 0; margin-top: 20%; margin-bottom: 20%; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; flex-grow: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
